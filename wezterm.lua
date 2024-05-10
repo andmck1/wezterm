@@ -2,7 +2,7 @@ local wezterm = require 'wezterm'
 
 local config = {}
 
-config.color_scheme = 'Doom Peacock'
+config.color_scheme = 'Earthsong'
 config.colors = {
     background = 'black',
     cursor_bg = 'white',
