@@ -3,7 +3,7 @@ local act = wezterm.action
 
 local config = {}
 
-config.color_scheme = 'Earthsong'
+config.color_scheme = 'Bamboo'
 config.colors = {
     background = 'black',
     cursor_bg = 'white',
