@@ -59,6 +59,11 @@ config.keys = {
         action = act.RotatePanes 'CounterClockwise',
     },
     { key = 'n', mods = 'CTRL', action = act.RotatePanes 'Clockwise' },
+    {
+        key = 'w',
+        mods = 'CTRL',
+        action = wezterm.action.CloseCurrentPane { confirm = false },
+    },
 }
 
 
