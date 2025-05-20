@@ -3,6 +3,9 @@ local act = wezterm.action
 
 local config = {}
 
+config.default_prog = { "pwsh.exe", "-NoLogo" }
+
+config.font = wezterm.font("MesloLGS NF")
 config.color_scheme = 'Bamboo'
 config.colors = {
     background = 'black',
@@ -60,12 +63,10 @@ config.keys = {
     },
     { key = 'n', mods = 'CTRL', action = act.RotatePanes 'Clockwise' },
     {
-        key = 'w',
+        key = 'r',
         mods = 'CTRL',
-        action = wezterm.action.CloseCurrentPane { confirm = false },
+        action = wezterm.action.ReloadConfiguration,
     },
 }
-
-
 
 return config
